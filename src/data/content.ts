@@ -4,23 +4,23 @@
 // ---------------------------------------------------------------------------
 
 export const profile = {
-  name: "Abdel", // TODO: your full name
-  role: "Software Engineer", // TODO: e.g. "Full-Stack Software Engineer"
-  location: "New York, NY", // TODO
-  email: "you@example.com", // TODO
+  name: "Abdelrahman Abdelgawad", // TODO: your full name
+  role: "Full Stack Software Engineer", // TODO: e.g. "Full-Stack Software Engineer"
+  location: "Brooklyn, NY", // TODO
+  email: "abdelabdelgawad03@gmail.com", // TODO
   resumeUrl: "/resume.pdf", // TODO: drop your resume PDF in /public/resume.pdf
   intro:
     "I build full-stack applications and tools, from real-time systems to applied ML experiments. Recently focused on React/TypeScript on the front end and Python/SQL on the back end, with a growing interest in computer vision.", // TODO: 2-3 sentences, written for a recruiter skimming in 10 seconds
-  photo: "/headshot.svg", // TODO: replace with a real headshot, e.g. /public/headshot.jpg, and update this path
+  photo: "/Headshot_Abdel.jpg", // TODO: replace with a real headshot, e.g. /public/headshot.jpg, and update this path
 };
 
 export const socials = [
-  { label: "GitHub", href: "https://github.com/your-username", icon: "github" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/your-username", icon: "linkedin" },
-  { label: "Email", href: "mailto:you@example.com", icon: "mail" },
+  { label: "GitHub", href: "https://github.com/abdelabdelgawad", icon: "github" },
+  { label: "LinkedIn", href: "https://linkedin.com/in/abdelabdelgawad", icon: "linkedin" },
+  { label: "Email", href: "mailto:abdelabdelgawad03@gmail.com", icon: "mail" },
   // Uncomment if relevant to your work:
-  // { label: "YouTube", href: "https://youtube.com/@your-channel", icon: "youtube" },
-  // { label: "Instagram", href: "https://instagram.com/your-handle", icon: "instagram" },
+  { label: "YouTube", href: "https://youtube.com/@abdelabdelgawad", icon: "youtube" },
+  { label: "Instagram", href: "https://instagram.com/abdel_ramen_noodles", icon: "instagram" },
 ] as const;
 
 export const nav = [
@@ -37,7 +37,7 @@ export const nav = [
 export const stack = [
   {
     category: "Languages",
-    items: ["TypeScript", "Python", "Java", "SQL"],
+    items: ["Python", "Java", "SQL", "C/C++", "JavaScript"],
   },
   {
     category: "Frameworks & Libraries",
@@ -53,20 +53,20 @@ export const stack = [
 // quality over quantity. `tags` should draw from the stack above.
 export const projects = [
   {
-    name: "FencingTime Clone",
+    name: "FencingTime",
     description:
       "A web app that recreates core tournament-bracket and scoring flows from FencingTime, built to practice full-stack architecture with a relational schema behind it.",
     tags: ["React", "SQL", "Node.js"],
-    githubUrl: "https://github.com/your-username/fencingtime-clone",
-    liveUrl: "",
+    githubUrl: "https://github.com/abdelabdelgawad/fencingtime",
+    liveUrl: "https://fencingtime.vercel.app",
     image: "/projects/fencingtime.png",
   },
   {
-    name: "NASA APOD Explorer",
+    name: "NASA APOD",
     description:
       "Browses NASA's Astronomy Picture of the Day archive through their public API, with search and a saved-favorites view backed by SQL.",
     tags: ["React", "SQL", "REST API"],
-    githubUrl: "https://github.com/your-username/nasa-apod",
+    githubUrl: "https://github.com/abdelabdelgawad/nasa-apod",
     liveUrl: "",
     image: "/projects/apod.png",
   },
@@ -74,17 +74,17 @@ export const projects = [
     name: "Particle Simulator",
     description:
       "An interactive 2D particle system exploring gravity, collisions, and emergent motion in real time, with adjustable simulation parameters.",
-    tags: ["Python"],
-    githubUrl: "https://github.com/your-username/particle-simulator",
+    tags: ["Python", "PyGame"],
+    githubUrl: "https://github.com/abdelabdelgawad/particle-life",
     liveUrl: "",
     image: "/projects/particles.png",
   },
   {
-    name: "Java Drawing App",
+    name: "Java Drawing Application",
     description:
       "A lightweight desktop drawing application with shape, brush, and layer tools, built to get hands-on with Java Swing and event-driven UI.",
     tags: ["Java"],
-    githubUrl: "https://github.com/your-username/java-drawing-app",
+    githubUrl: "https://github.com/abdelabdelgawad/drawingapplication",
     liveUrl: "",
     image: "/projects/drawing-app.png",
   },

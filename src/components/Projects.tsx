@@ -5,37 +5,36 @@ import { GithubIcon, ExternalLinkIcon } from "@/components/icons";
 export default function Projects() {
   return (
     <Section id="projects" index="03" title="Projects">
-      <div className="grid sm:grid-cols-2 gap-5">
+      <div className="projects__grid">
         {projects.map((project) => (
-          <article
-            key={project.name}
-            className="border border-[var(--color-border)] bg-[var(--color-surface)] rounded-lg p-5 flex flex-col"
-          >
-            <h3 className="font-[family-name:var(--font-display)] font-semibold text-lg mb-2">
-              {project.name}
-            </h3>
-            <p className="text-[var(--color-ink-soft)] text-sm leading-relaxed mb-4 flex-1">
-              {project.description}
-            </p>
-            <div className="flex flex-wrap gap-1.5 mb-4">
+          <article key={project.name} className="project-card">
+            {project.image && (
+              <div className="project-card__image-wrap">
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="project-card__image"
+                />
+              </div>
+            )}
+            <h3 className="project-card__title">{project.name}</h3>
+            <p className="project-card__description">{project.description}</p>
+            <div className="project-card__tags">
               {project.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="font-[family-name:var(--font-mono)] text-[11px] px-2 py-0.5 rounded-full border border-[var(--color-border)] text-[var(--color-ink-soft)]"
-                >
+                <span key={tag} className="project-card__tag">
                   {tag}
                 </span>
               ))}
             </div>
-            <div className="flex items-center gap-4 text-sm">
+            <div className="project-card__links">
               {project.githubUrl && (
                 <a
                   href={project.githubUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 hover:text-[var(--color-accent)] transition-colors"
+                  className="project-card__link"
                 >
-                  <GithubIcon className="w-4 h-4" />
+                  <GithubIcon className="project-card__link-icon" />
                   Code
                 </a>
               )}
@@ -44,9 +43,9 @@ export default function Projects() {
                   href={project.liveUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1.5 hover:text-[var(--color-accent)] transition-colors"
+                  className="project-card__link"
                 >
-                  <ExternalLinkIcon className="w-4 h-4" />
+                  <ExternalLinkIcon className="project-card__link-icon" />
                   Live
                 </a>
               )}
