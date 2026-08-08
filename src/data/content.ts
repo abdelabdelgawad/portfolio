@@ -4,21 +4,21 @@
 // ---------------------------------------------------------------------------
 
 export const profile = {
-  name: "Abdelrahman Abdelgawad", // TODO: your full name
-  role: "Full Stack Software Engineer", // TODO: e.g. "Full-Stack Software Engineer"
-  location: "Brooklyn, NY", // TODO
-  email: "abdelabdelgawad03@gmail.com", // TODO
-  resumeUrl: "/resume.pdf", // TODO: drop your resume PDF in /public/resume.pdf
+  name: "Abdelrahman Abdelgawad",
+  role: "Full Stack Software Engineer",
+  location: "Brooklyn, NY",
+  email: "abdelabdelgawad03@gmail.com",
+  phoneNumber: "+1 (915) 873-2908",
+  resumeUrl: "/resume.pdf",
   intro:
-    "I build full-stack applications and tools, from real-time systems to applied ML experiments. Recently focused on React/TypeScript on the front end and Python/SQL on the back end, with a growing interest in computer vision.", // TODO: 2-3 sentences, written for a recruiter skimming in 10 seconds
-  photo: "/Headshot_Abdel.jpg", // TODO: replace with a real headshot, e.g. /public/headshot.jpg, and update this path
+    "I build full-stack applications and tools, from real-time systems to applied ML experiments. Recently focused on React/TypeScript on the front end and Python/SQL on the back end, with a growing interest in computer vision.",
+  photo: "/Headshot_Abdel.jpg",
 };
 
 export const socials = [
   { label: "GitHub", href: "https://github.com/abdelabdelgawad", icon: "github" },
   { label: "LinkedIn", href: "https://linkedin.com/in/abdelabdelgawad", icon: "linkedin" },
   { label: "Email", href: "mailto:abdelabdelgawad03@gmail.com", icon: "mail" },
-  // Uncomment if relevant to your work:
   { label: "YouTube", href: "https://youtube.com/@abdelabdelgawad", icon: "youtube" },
   { label: "Instagram", href: "https://instagram.com/abdel_ramen_noodles", icon: "instagram" },
 ] as const;
@@ -130,19 +130,19 @@ export const experience = [
 
 export const education = [
   {
-    school: "Graduate School Name",
-    degree: "M.S. in Computer Science", // TODO
-    location: "City, ST",
-    start: "Year",
-    end: "Year",
-    details: ["Relevant coursework, thesis topic, or GPA if strong."],
+    school: "Georgia Institute of Technology",
+    degree: "M.S. in Computer Science",
+    location: "Atlanta, GA",
+    start: "2025",
+    end: "2027",
+    details: ["Specialization in Computational Perception & Robotics"],
   },
   {
-    school: "Undergraduate School Name",
-    degree: "B.S. in Computer Science", // TODO
-    location: "City, ST",
-    start: "Year",
-    end: "Year",
-    details: ["Relevant coursework, honors, or GPA if strong."],
+    school: "Pennsylvania State University",
+    degree: "B.S. in Computer Science",
+    location: "University Park, PA",
+    start: "2021",
+    end: "2024",
+    details: ["Minor in Mathematics", "Minor in Cybersecurity Foundations"],
   },
 ] as const;
