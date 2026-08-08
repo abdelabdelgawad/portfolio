@@ -3,21 +3,22 @@ import { iconMap } from "@/components/icons";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[var(--color-border)] py-14">
-      <div className="max-w-[960px] mx-auto px-5 sm:px-8 flex flex-col sm:flex-row sm:items-end justify-between gap-8">
+    <footer className="site-footer">
+      <div className="container site-footer__row">
         <div>
-          <p className="eyebrow mb-2">{`// get in touch`}</p>
-          <h2 className="section-heading text-2xl sm:text-[28px] mb-3">
-            Let&apos;s talk.
-          </h2>
-          <a
-            href={`mailto:${profile.email}`}
-            className="text-[var(--color-accent)] text-sm hover:underline"
-          >
-            {profile.email}
-          </a>
+          <p className="eyebrow site-footer__eyebrow">{`// get in touch`}</p>
+          <h2 className="section-heading site-footer__heading">Let&apos;s talk.</h2>
+          <p>
+            <a href={`mailto:${profile.email}`} className="site-footer__email">
+              {profile.email}
+            </a>
+            <br />
+            <a href={`tel:${profile.phoneNumber}`} className="site-footer__phone">
+              {profile.phoneNumber}
+            </a>
+          </p>
         </div>
-        <div className="flex items-center gap-5">
+        <div className="site-footer__socials">
           {socials.map((s) => {
             const Icon = iconMap[s.icon as keyof typeof iconMap];
             return (
@@ -27,16 +28,16 @@ export default function Footer() {
                 target={s.href.startsWith("http") ? "_blank" : undefined}
                 rel="noreferrer"
                 aria-label={s.label}
-                className="text-[var(--color-ink-soft)] hover:text-[var(--color-accent)] transition-colors"
+                className="site-footer__social-link"
               >
-                <Icon className="w-5 h-5" />
+                <Icon className="site-footer__social-icon" />
               </a>
             );
           })}
         </div>
       </div>
-      <p className="max-w-[960px] mx-auto px-5 sm:px-8 mt-10 text-[12px] text-[var(--color-muted)] font-[family-name:var(--font-mono)]">
-        © {new Date().getFullYear()} {profile.name}. Built with Next.js & Tailwind.
+      <p className="container site-footer__copyright">
+        © {new Date().getFullYear()} {profile.name}.
       </p>
     </footer>
   );

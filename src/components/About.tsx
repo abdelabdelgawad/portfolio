@@ -25,7 +25,7 @@ export default function About() {
                 View Resume
               </a>
               <a href="#projects" className="about__button about__button--primary">
-                See projects
+                See Projects
               </a>
             </div>
           </div>

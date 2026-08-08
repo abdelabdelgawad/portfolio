@@ -12,11 +12,11 @@ export default function Section({
   children: ReactNode;
 }) {
   return (
-    <section id={id} className="scroll-mt-24 py-16 sm:py-20 border-t border-[var(--color-border)]">
-      <div className="max-w-[960px] mx-auto px-5 sm:px-8">
-        <div className="flex items-baseline gap-3 mb-8">
+    <section id={id} className="section">
+      <div className="container">
+        <div className="section__header">
           <span className="eyebrow">{`// ${index}`}</span>
-          <h2 className="section-heading text-2xl sm:text-[28px]">{title}</h2>
+          <h2 className="section-heading section__title">{title}</h2>
         </div>
         {children}
       </div>

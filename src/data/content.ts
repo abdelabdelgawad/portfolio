@@ -18,7 +18,7 @@ export const profile = {
 export const socials = [
   { label: "GitHub", href: "https://github.com/abdelabdelgawad", icon: "github" },
   { label: "LinkedIn", href: "https://linkedin.com/in/abdelabdelgawad", icon: "linkedin" },
-  { label: "Email", href: "mailto:abdelabdelgawad03@gmail.com", icon: "mail" },
+  // { label: "Email", href: "mailto:abdelabdelgawad03@gmail.com", icon: "mail" },
   { label: "YouTube", href: "https://youtube.com/@abdelabdelgawad", icon: "youtube" },
   { label: "Instagram", href: "https://instagram.com/abdel_ramen_noodles", icon: "instagram" },
 ] as const;
