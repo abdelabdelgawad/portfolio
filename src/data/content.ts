@@ -1,7 +1,7 @@
-// ---------------------------------------------------------------------------
-// This file is the ONLY place you should need to touch to put your real
-// content in. Every section on the page pulls from here.
-// ---------------------------------------------------------------------------
+
+
+
+
 
 export const profile = {
   name: "Abdelrahman Abdelgawad",
@@ -31,9 +31,7 @@ export const nav = [
   { label: "Education", href: "#education" },
 ] as const;
 
-// Keep this list tight. 12-16 items you'd be comfortable being interviewed
-// on, grouped so a recruiter can parse it in a few seconds rather than
-// reading a wall of badges.
+
 export const stack = [
   {
     category: "Languages",
@@ -49,8 +47,7 @@ export const stack = [
   },
 ] as const;
 
-// TODO: replace with your real projects. Keep 3-6 of your strongest —
-// quality over quantity. `tags` should draw from the stack above.
+
 export const projects = [
   {
     name: "FencingTime",
@@ -60,15 +57,17 @@ export const projects = [
     githubUrl: "https://github.com/abdelabdelgawad/fencingtime",
     liveUrl: "https://fencingtime.vercel.app",
     image: "/projects/fencingtime.png",
+		status: "In Progress",
   },
   {
     name: "NASA APOD",
     description:
       "Browses NASA's Astronomy Picture of the Day archive through their public API, with search and a saved-favorites view backed by SQL.",
-    tags: ["React", "SQL", "REST API"],
+    tags: ["React", "REST API"],
     githubUrl: "https://github.com/abdelabdelgawad/nasa-apod",
-    liveUrl: "",
-    image: "/projects/apod.png",
+    liveUrl: "https://nasa-apod.abdelgawad.dev/",
+    image: "/projects/nasa-apod.png",
+		status: "Complete",
   },
   {
     name: "Particle Simulator",
@@ -78,55 +77,61 @@ export const projects = [
     githubUrl: "https://github.com/abdelabdelgawad/particle-life",
     liveUrl: "",
     image: "/projects/particles.png",
+		status: "Complete",
   },
   {
     name: "Java Drawing Application",
     description:
       "A lightweight desktop drawing application with shape, brush, and layer tools, built to get hands-on with Java Swing and event-driven UI.",
-    tags: ["Java"],
+    tags: ["Java", "GUI"],
     githubUrl: "https://github.com/abdelabdelgawad/drawingapplication",
-    liveUrl: "",
+    liveUrl: "https://github.com/abdelabdelgawad/DrawingApplication/releases/download/v1.0.0/DrawingApplication.jar",
     image: "/projects/drawing-app.png",
+		status: "Complete",
   },
 ] as const;
 
-// TODO: keep this to technical / relevant roles, per your call to drop
-// non-technical positions like property management.
+
 export const experience = [
   {
     role: "Professional Services Consultant",
-    org: "Company Name",
-    location: "City, ST",
-    start: "Month Year",
-    end: "Month Year",
+    org: "Bright Brains IT",
+    location: "Brooklyn, NY",
+    start: "June 2025",
+    end: "August 2026",
     bullets: [
-      "One line on scope and impact, led with an action verb and a metric where you have one.",
-      "Second bullet on a distinct contribution, not a restatement of the first.",
+      "Configure, customize, and deploy Nexthink DEX (Digital Employee Experience) solutions for business clients, ensuring optimal system performance and scalability.",
+      "Develop collectors and automation workflows to integrate Nexthink with ITSM platforms, streamlining incident detection, and improve endpoint monitoring.",
+      "Analyze large-scale endpoint and user experience data, building queries and dashboards that surface actionable insights for IT teams.",
+      "Troubleshoot technical issues across distributed environments, collaborating with engineering teams and documenting solutions for client environments.",
     ],
   },
   {
     role: "Undergraduate Research Assistant",
-    org: "University Name, Lab Name",
-    location: "City, ST",
-    start: "Month Year",
-    end: "Month Year",
+    org: "Pennsylvania State University",
+    location: "University Park, PA",
+    start: "January 2024",
+    end: "May 2024",
     bullets: [
-      "What you built, analyzed, or automated, and for what research question.",
-      "Any resulting publication, poster, or presentation, if applicable.",
+      "Co-authored a research paper on training visual transformers, helping develop and clarify deep learning topics including CNNs, gradient descent, and image classification using MNIST and Fashion-MNIST datasets.",
+      "Collaborated with faculty and TAs to write and revise 15+ textbook questions and sections, ensuring clarity, technical accuracy, and accessibility for students.",
+      "Reviewed and formatted 20+ mathematical equations and theoretical explanations using LaTeX to support future versions of the course textbook.",
     ],
   },
   {
     role: "Coding Camp Tutor",
-    org: "Organization Name",
-    location: "City, ST",
-    start: "Month Year",
-    end: "Month Year",
+    org: "Girls Who Code",
+    location: "Brooklyn, NY",
+    start: "June 2023",
+    end: "August 2023",
     bullets: [
-      "Taught/mentored N students in [language/topic], covering [specifics].",
-      "Anything you built or improved about the curriculum or materials.",
+      "Led coding lessons for 20+ middle school students, introducing programming fundamentals (variables, loops, conditionals, and functions) through interactive Scratch projects.",
+      "Assisted in designing and delivering 12 engaging lesson plans with instructors, fostering creativity and computational thinking.",
+      "Provided one-on-one support to students, helping them debug code and understand programming concepts, resulting in improved problem-solving skills.",
     ],
   },
 ] as const;
+
 
 export const education = [
   {
