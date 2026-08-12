@@ -22,7 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 // TODO: swap in your real name, tagline, and a short description for SEO/link previews.
 export const metadata: Metadata = {
-  title: "Abdel — Software Engineer",
+  title: "Abdel — Portfolio",
   description:
     "Portfolio of Abdel, a software engineer working across full-stack web, data, and applied ML.",
 };

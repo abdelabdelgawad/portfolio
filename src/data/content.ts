@@ -7,18 +7,18 @@ export const profile = {
   name: "Abdelrahman Abdelgawad",
   role: "Full Stack Software Engineer",
   location: "Brooklyn, NY",
-  email: "abdelabdelgawad03@gmail.com",
+  email: "abdelabdelgawad0@gmail.com",
   phoneNumber: "+1 (915) 873-2908",
   resumeUrl: "/resume.pdf",
   intro:
-    "I build full-stack applications and tools, from real-time systems to applied ML experiments. Recently focused on React/TypeScript on the front end and Python/SQL on the back end, with a growing interest in computer vision.",
+    "Hi there! I'm a software engineer and CS Master's student who's all about building full-stack applications (even if it involves twice as much head scratching).\nWhen I'm not coding, I'm probably out fencing, enjoying a good book, or deep in a video game.",
   photo: "/headshot_abdel.png",
 };
 
 export const socials = [
   { label: "GitHub", href: "https://github.com/abdelabdelgawad", icon: "github" },
   { label: "LinkedIn", href: "https://linkedin.com/in/abdelabdelgawad", icon: "linkedin" },
-  // { label: "Email", href: "mailto:abdelabdelgawad03@gmail.com", icon: "mail" },
+  // { label: "Email", href: "mailto:abdelabdelgawad0@gmail.com", icon: "mail" },
   { label: "YouTube", href: "https://youtube.com/@abdelabdelgawad/videos", icon: "youtube" },
   { label: "Instagram", href: "https://instagram.com/abdel_ramen_noodles", icon: "instagram" },
 ] as const;
@@ -35,15 +35,15 @@ export const nav = [
 export const stack = [
   {
     category: "Languages",
-    items: ["Python", "Java", "SQL", "C/C++", "JavaScript"],
+    items: ["Python", "C/C++", "Java", "JavaScript", "TypeScript", "SQL"],
   },
   {
     category: "Frameworks & Libraries",
-    items: ["React", "Next.js", "Node.js", "Flask"],
+    items: ["React", "Next.js", "Node.js", "Tailwind CSS"],
   },
   {
     category: "Tools & Platforms",
-    items: ["Git", "Docker", "PostgreSQL", "AWS", "Vercel"],
+    items: ["Linux", "Git", "Docker", "AWS", "Google Cloud", "PostgreSQL"],
   },
 ] as const;
 

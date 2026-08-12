@@ -13,7 +13,7 @@ export default function About() {
                 {profile.role} · {profile.location}
               </span>
             </h1>
-            <p className="about__description">{profile.intro}</p>
+            <p className="about__description whitespace-pre-line">{profile.intro}</p>
 
             <div className="about__actions">
               <a

@@ -265,7 +265,7 @@ body {
   color: var(--color-ink-soft);
   font-size: 20px;
   font-weight: 400;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 @media (min-width: 640px) {
