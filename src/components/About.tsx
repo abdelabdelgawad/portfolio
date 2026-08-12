@@ -32,7 +32,6 @@ export default function About() {
 
           <div className="about__photo-wrap">
             <div className="about__photo-frame">
-              {/* TODO: replace /public/headshot.svg with a real professional headshot (jpg/png) and update profile.photo in src/data/content.ts */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={profile.photo} alt={profile.name} className="about__photo" />
             </div>

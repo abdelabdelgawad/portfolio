@@ -12,7 +12,7 @@ export const profile = {
   resumeUrl: "/resume.pdf",
   intro:
     "I build full-stack applications and tools, from real-time systems to applied ML experiments. Recently focused on React/TypeScript on the front end and Python/SQL on the back end, with a growing interest in computer vision.",
-  photo: "/Headshot_Abdel.jpg",
+  photo: "/headshot_abdel.png",
 };
 
 export const socials = [
