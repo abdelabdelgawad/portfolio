@@ -52,8 +52,8 @@ export const projects = [
   {
     name: "FencingTime",
     description:
-      "A web app that recreates core tournament-bracket and scoring flows from FencingTime, built to practice full-stack architecture with a relational schema behind it.",
-    tags: ["React", "SQL", "Node.js"],
+      "A full-stack tournament management app, allowing users to manage fencers and events, track scores, and view results, with a PostgreSQL backend and a React frontend.",
+    tags: ["React", "Node.js", "SQL"],
     githubUrl: "https://github.com/abdelabdelgawad/fencingtime",
     liveUrl: "https://fencingtime.vercel.app",
     image: "/projects/fencingtime.png",
@@ -62,7 +62,7 @@ export const projects = [
   {
     name: "NASA APOD",
     description:
-      "Browses NASA's Astronomy Picture of the Day archive through their public API, with search and a saved-favorites view backed by SQL.",
+      "Browse NASA's Astronomy Picture of the Day through their public API, wrapped in a simple React interface.",
     tags: ["React", "REST API"],
     githubUrl: "https://github.com/abdelabdelgawad/nasa-apod",
     liveUrl: "https://nasa-apod.abdelgawad.dev/",
@@ -72,7 +72,7 @@ export const projects = [
   {
     name: "Particle Simulator",
     description:
-      "An interactive 2D particle system exploring gravity, collisions, and emergent motion in real time, with adjustable simulation parameters.",
+      "An interactive 2D particle system built using PyGame, exploring forces and emergent behavior through adjustable simulation parameters.",
     tags: ["Python", "PyGame"],
     githubUrl: "https://github.com/abdelabdelgawad/particle-life",
     liveUrl: "",
@@ -82,7 +82,7 @@ export const projects = [
   {
     name: "Java Drawing Application",
     description:
-      "A lightweight desktop drawing application with shape, brush, and layer tools, built to get hands-on with Java Swing and event-driven UI.",
+      "A lightweight desktop drawing application with shape and color tools, built to get hands-on with OOP and GUI development.",
     tags: ["Java", "GUI"],
     githubUrl: "https://github.com/abdelabdelgawad/drawingapplication",
     liveUrl: "https://github.com/abdelabdelgawad/DrawingApplication/releases/download/v1.0.0/DrawingApplication.jar",
