@@ -17,7 +17,16 @@ export default function Projects() {
                 />
               </div>
             )}
-            <h3 className="project-card__title">{project.name}</h3>
+            <div className="project-card__header">
+              <h3 className="project-card__title">{project.name}</h3>
+              <span
+                className={`project-card__status project-card__status--${
+                  project.status === "Complete" ? "complete" : "wip"
+                }`}
+              >
+                {project.status}
+              </span>
+            </div>
             <p className="project-card__description">{project.description}</p>
             <div className="project-card__tags">
               {project.tags.map((tag) => (
@@ -53,6 +62,7 @@ export default function Projects() {
           </article>
         ))}
       </div>
+      <p className="projects__more">More projects coming soon.</p>
     </Section>
   );
 }

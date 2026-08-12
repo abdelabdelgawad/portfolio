@@ -19,7 +19,7 @@ export const socials = [
   { label: "GitHub", href: "https://github.com/abdelabdelgawad", icon: "github" },
   { label: "LinkedIn", href: "https://linkedin.com/in/abdelabdelgawad", icon: "linkedin" },
   // { label: "Email", href: "mailto:abdelabdelgawad03@gmail.com", icon: "mail" },
-  { label: "YouTube", href: "https://youtube.com/@abdelabdelgawad", icon: "youtube" },
+  { label: "YouTube", href: "https://youtube.com/@abdelabdelgawad/videos", icon: "youtube" },
   { label: "Instagram", href: "https://instagram.com/abdel_ramen_noodles", icon: "instagram" },
 ] as const;
 
@@ -57,7 +57,7 @@ export const projects = [
     githubUrl: "https://github.com/abdelabdelgawad/fencingtime",
     liveUrl: "https://fencingtime.vercel.app",
     image: "/projects/fencingtime.png",
-		status: "In Progress",
+    status: "WIP",
   },
   {
     name: "NASA APOD",
@@ -67,7 +67,7 @@ export const projects = [
     githubUrl: "https://github.com/abdelabdelgawad/nasa-apod",
     liveUrl: "https://nasa-apod.abdelgawad.dev/",
     image: "/projects/nasa-apod.png",
-		status: "Complete",
+    status: "Complete",
   },
   {
     name: "Particle Simulator",
@@ -77,7 +77,7 @@ export const projects = [
     githubUrl: "https://github.com/abdelabdelgawad/particle-life",
     liveUrl: "",
     image: "/projects/particles.png",
-		status: "Complete",
+    status: "Complete",
   },
   {
     name: "Java Drawing Application",
@@ -87,7 +87,7 @@ export const projects = [
     githubUrl: "https://github.com/abdelabdelgawad/drawingapplication",
     liveUrl: "https://github.com/abdelabdelgawad/DrawingApplication/releases/download/v1.0.0/DrawingApplication.jar",
     image: "/projects/drawing-app.png",
-		status: "Complete",
+    status: "Complete",
   },
 ] as const;
 
